@@ -1,0 +1,725 @@
+{
+  "dataset_info": {
+    "is_synthetic": true,
+    "total_sequences": 810,
+    "train_sequences": 540,
+    "val_sequences": 90,
+    "test_sequences": 180,
+    "features": [
+      "acc_x",
+      "acc_y",
+      "acc_z",
+      "acc_mag"
+    ],
+    "states": [
+      "Walking",
+      "Sitting",
+      "Running"
+    ]
+  },
+  "model_parameters": {
+    "pi": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "A": [
+      [
+        0.9997733197325173,
+        0.00011334013374135781,
+        0.00011334013374135781
+      ],
+      [
+        0.00011334013374135781,
+        0.9997733197325173,
+        0.00011334013374135781
+      ],
+      [
+        0.00011334013374135781,
+        0.00011334013374135781,
+        0.9997733197325173
+      ]
+    ],
+    "state_means": [
+      [
+        -0.03826974060321077,
+        -0.22156886008446408,
+        -0.05355489888795024,
+        -0.256706933634172
+      ],
+      [
+        -0.09410593786346114,
+        -0.26828374311324155,
+        -0.13157583430559475,
+        -0.3408828081006066
+      ],
+      [
+        0.13237567846667164,
+        0.4898526031977045,
+        0.18513073319354523,
+        0.5975897417347825
+      ]
+    ],
+    "state_covs": [
+      [
+        [
+          0.4495768850542602,
+          0.34906911515148714,
+          0.3587285007030637,
+          0.3708630389211195
+        ],
+        [
+          0.34906911515148714,
+          0.5939861482003825,
+          0.03221366060278852,
+          0.5953034469483477
+        ],
+        [
+          0.3587285007030637,
+          0.03221366060278852,
+          0.523688176442702,
+          0.06266426816799407
+        ],
+        [
+          0.3708630389211195,
+          0.5953034469483477,
+          0.06266426816799407,
+          0.5990832636329569
+        ]
+      ],
+      [
+        [
+          0.002146511134176654,
+          3.1568033284092463e-06,
+          4.827332188863293e-06,
+          4.706013385482127e-05
+        ],
+        [
+          3.1568033284092463e-06,
+          0.0013459111214457853,
+          -1.3239967228529647e-05,
+          0.001241231756471922
+        ],
+        [
+          4.827332188863293e-06,
+          -1.3239967228529647e-05,
+          0.004112759395966081,
+          0.0001555433631044964
+        ],
+        [
+          4.706013385482127e-05,
+          0.001241231756471922,
+          0.0001555433631044964,
+          0.0013446379460420829
+        ]
+      ],
+      [
+        [
+          2.5207327829750534,
+          1.4506077818495755,
+          0.3276575260953222,
+          1.4751506229887719
+        ],
+        [
+          1.4506077818495755,
+          2.043943441240624,
+          -1.051997601465389,
+          1.9420989404810078
+        ],
+        [
+          0.3276575260953222,
+          -1.051997601465389,
+          2.4180453484204407,
+          -0.8654724972420564
+        ],
+        [
+          1.4751506229887719,
+          1.9420989404810078,
+          -0.8654724972420564,
+          1.8606590603599444
+        ]
+      ]
+    ]
+  },
+  "test_metrics": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "per_class": {
+      "Walking": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 3000
+      },
+      "Sitting": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 3000
+      },
+      "Running": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 3000
+      }
+    },
+    "confusion_matrix_raw": [
+      [
+        3000,
+        0,
+        0
+      ],
+      [
+        0,
+        3000,
+        0
+      ],
+      [
+        0,
+        0,
+        3000
+      ]
+    ],
+    "confusion_matrix_normalized": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "state_names": [
+      "Walking",
+      "Sitting",
+      "Running"
+    ],
+    "total_samples": 9000
+  },
+  "viterbi_metrics": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "per_class": {
+      "Walking": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 3000
+      },
+      "Sitting": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 3000
+      },
+      "Running": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 3000
+      }
+    },
+    "confusion_matrix_raw": [
+      [
+        3000,
+        0,
+        0
+      ],
+      [
+        0,
+        3000,
+        0
+      ],
+      [
+        0,
+        0,
+        3000
+      ]
+    ],
+    "confusion_matrix_normalized": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "state_names": [
+      "Walking",
+      "Sitting",
+      "Running"
+    ],
+    "total_samples": 9000
+  },
+  "likelihood_stats": {
+    "mean_log_likelihood": 87.87918846040755,
+    "std_log_likelihood": 246.21340643258236,
+    "mean_nll_per_step": -1.757583769208151,
+    "median_log_likelihood": 32.64570443722525
+  },
+  "calibration": {
+    "ece": 8.468071145961709e-06,
+    "mce": 8.468071145961709e-06,
+    "bin_centers": [
+      0.05,
+      0.15000000000000002,
+      0.25,
+      0.35000000000000003,
+      0.45,
+      0.55,
+      0.6500000000000001,
+      0.75,
+      0.8500000000000001,
+      0.95
+    ],
+    "bin_accuracies": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "bin_confidences": [
+      0.05,
+      0.15000000000000002,
+      0.25,
+      0.35000000000000003,
+      0.45,
+      0.55,
+      0.6500000000000001,
+      0.75,
+      0.8500000000000001,
+      0.999991531928854
+    ],
+    "bin_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      9000
+    ],
+    "bins": [
+      {
+        "bin_index": 0,
+        "bin_lower": 0.0,
+        "bin_upper": 0.1,
+        "bin_center": 0.05,
+        "accuracy": 0.0,
+        "confidence": 0.05,
+        "count": 0,
+        "weight": 0.0
+      },
+      {
+        "bin_index": 1,
+        "bin_lower": 0.1,
+        "bin_upper": 0.2,
+        "bin_center": 0.15000000000000002,
+        "accuracy": 0.0,
+        "confidence": 0.15000000000000002,
+        "count": 0,
+        "weight": 0.0
+      },
+      {
+        "bin_index": 2,
+        "bin_lower": 0.2,
+        "bin_upper": 0.30000000000000004,
+        "bin_center": 0.25,
+        "accuracy": 0.0,
+        "confidence": 0.25,
+        "count": 0,
+        "weight": 0.0
+      },
+      {
+        "bin_index": 3,
+        "bin_lower": 0.30000000000000004,
+        "bin_upper": 0.4,
+        "bin_center": 0.35000000000000003,
+        "accuracy": 0.0,
+        "confidence": 0.35000000000000003,
+        "count": 0,
+        "weight": 0.0
+      },
+      {
+        "bin_index": 4,
+        "bin_lower": 0.4,
+        "bin_upper": 0.5,
+        "bin_center": 0.45,
+        "accuracy": 0.0,
+        "confidence": 0.45,
+        "count": 0,
+        "weight": 0.0
+      },
+      {
+        "bin_index": 5,
+        "bin_lower": 0.5,
+        "bin_upper": 0.6000000000000001,
+        "bin_center": 0.55,
+        "accuracy": 0.0,
+        "confidence": 0.55,
+        "count": 0,
+        "weight": 0.0
+      },
+      {
+        "bin_index": 6,
+        "bin_lower": 0.6000000000000001,
+        "bin_upper": 0.7000000000000001,
+        "bin_center": 0.6500000000000001,
+        "accuracy": 0.0,
+        "confidence": 0.6500000000000001,
+        "count": 0,
+        "weight": 0.0
+      },
+      {
+        "bin_index": 7,
+        "bin_lower": 0.7000000000000001,
+        "bin_upper": 0.8,
+        "bin_center": 0.75,
+        "accuracy": 0.0,
+        "confidence": 0.75,
+        "count": 0,
+        "weight": 0.0
+      },
+      {
+        "bin_index": 8,
+        "bin_lower": 0.8,
+        "bin_upper": 0.9,
+        "bin_center": 0.8500000000000001,
+        "accuracy": 0.0,
+        "confidence": 0.8500000000000001,
+        "count": 0,
+        "weight": 0.0
+      },
+      {
+        "bin_index": 9,
+        "bin_lower": 0.9,
+        "bin_upper": 1.0,
+        "bin_center": 0.95,
+        "accuracy": 1.0,
+        "confidence": 0.999991531928854,
+        "count": 9000,
+        "weight": 1.0
+      }
+    ],
+    "total_samples": 9000
+  },
+  "bootstrap": {
+    "n_bootstrap": 1000,
+    "confidence_level": 0.95,
+    "accuracy": {
+      "point_estimate": 1.0,
+      "ci_lower": 1.0,
+      "ci_upper": 1.0,
+      "std": 0.0
+    },
+    "macro_f1": {
+      "point_estimate": 1.0,
+      "ci_lower": 1.0,
+      "ci_upper": 1.0,
+      "std": 0.0
+    }
+  },
+  "loso": {
+    "n_folds": 9,
+    "mean_accuracy": 1.0,
+    "std_accuracy": 0.0,
+    "mean_macro_f1": 1.0,
+    "std_macro_f1": 0.0,
+    "fold_results": [
+      {
+        "held_out_subject": 101,
+        "n_train_sequences": 720,
+        "n_test_sequences": 90,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class": {
+          "Walking": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          },
+          "Sitting": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          },
+          "Running": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          }
+        }
+      },
+      {
+        "held_out_subject": 102,
+        "n_train_sequences": 720,
+        "n_test_sequences": 90,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class": {
+          "Walking": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          },
+          "Sitting": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          },
+          "Running": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          }
+        }
+      },
+      {
+        "held_out_subject": 103,
+        "n_train_sequences": 720,
+        "n_test_sequences": 90,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class": {
+          "Walking": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          },
+          "Sitting": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          },
+          "Running": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          }
+        }
+      },
+      {
+        "held_out_subject": 104,
+        "n_train_sequences": 720,
+        "n_test_sequences": 90,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class": {
+          "Walking": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          },
+          "Sitting": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          },
+          "Running": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          }
+        }
+      },
+      {
+        "held_out_subject": 105,
+        "n_train_sequences": 720,
+        "n_test_sequences": 90,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class": {
+          "Walking": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          },
+          "Sitting": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          },
+          "Running": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          }
+        }
+      },
+      {
+        "held_out_subject": 106,
+        "n_train_sequences": 720,
+        "n_test_sequences": 90,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class": {
+          "Walking": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          },
+          "Sitting": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          },
+          "Running": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          }
+        }
+      },
+      {
+        "held_out_subject": 107,
+        "n_train_sequences": 720,
+        "n_test_sequences": 90,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class": {
+          "Walking": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          },
+          "Sitting": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          },
+          "Running": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          }
+        }
+      },
+      {
+        "held_out_subject": 108,
+        "n_train_sequences": 720,
+        "n_test_sequences": 90,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class": {
+          "Walking": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          },
+          "Sitting": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          },
+          "Running": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          }
+        }
+      },
+      {
+        "held_out_subject": 109,
+        "n_train_sequences": 720,
+        "n_test_sequences": 90,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class": {
+          "Walking": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          },
+          "Sitting": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          },
+          "Running": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1500
+          }
+        }
+      }
+    ]
+  },
+  "error_analysis": {
+    "walking_misclassified_as_running": {
+      "count": 0,
+      "rate": 0.0,
+      "physical_explanation": "Occurs during brisk walking or uphill grade where arm/torso acceleration approaches the low-end ground impact threshold of jogging (15-18 m/s^2)."
+    },
+    "running_misclassified_as_walking": {
+      "count": 0,
+      "rate": 0.0,
+      "physical_explanation": "Occurs during slow fatigue-induced deceleration or transition strides where heel strike impact dampens and cadence drops below 2.2 Hz."
+    },
+    "sitting_misclassified_as_locomotion": {
+      "count": 0,
+      "rate": 0.0,
+      "physical_explanation": "Extremely rare when using Chest IMU due to static 1g gravity vector. Primarily caused by deep coughing or torso realignment on the chair."
+    },
+    "locomotion_misclassified_as_sitting": {
+      "count": 0,
+      "rate": 0.0,
+      "physical_explanation": "Momentary pauses between strides or momentary standing pauses mid-sequence."
+    }
+  }
+}

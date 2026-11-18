@@ -1,0 +1,17 @@
+# Core Scientific & Data Processing
+numpy>=1.24.0
+scipy>=1.10.0
+pandas>=2.0.0
+scikit-learn>=1.2.0
+
+# Interactive Dashboard & Visualizations
+streamlit>=1.30.0
+plotly>=5.15.0
+
+# Testing, Quality Assurance & Benchmarking (hmmlearn used ONLY as an oracle test benchmark)
+pytest>=7.4.0
+hypothesis>=6.80.0
+hmmlearn>=0.3.0
+ruff>=0.1.0
+mypy>=1.5.0
+

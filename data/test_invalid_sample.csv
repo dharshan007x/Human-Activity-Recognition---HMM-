@@ -1,0 +1,4 @@
+time,sensor_a,sensor_b
+0.1,invalid_string,3.2
+0.2,corrupted_val,4.1
+

@@ -1,0 +1,35 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Data exclusions (PAMAP2 raw .dat files and extracted archives)
+data/raw/
+data/PAMAP2_Dataset/
+*.dat
+*.zip
+*.tar.gz
+
+# Test, coverage and cache directories
+.pytest_cache/
+.hypothesis/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Streamlit runtime and local user state
+.streamlit/
+*.log
+
+# Operating system artifacts
+.DS_Store
+Thumbs.db
+

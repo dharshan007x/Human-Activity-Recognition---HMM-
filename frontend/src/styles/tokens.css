@@ -1,0 +1,121 @@
+/* Design Tokens: Warm Editorial Research Monograph */
+@import '@fontsource/fraunces/400.css';
+@import '@fontsource/fraunces/600.css';
+@import '@fontsource/fraunces/700.css';
+@import '@fontsource/fraunces/400-italic.css';
+@import '@fontsource/source-sans-3/400.css';
+@import '@fontsource/source-sans-3/600.css';
+@import '@fontsource/source-sans-3/700.css';
+@import 'katex/dist/katex.min.css';
+
+:root {
+  /* Warm Field Notebook Palette */
+  --bg-canvas: #FBF6EE;         /* Cream main background */
+  --bg-secondary: #F4EBD9;      /* Paper secondary tone */
+  --bg-tertiary: #EDE0C8;       /* Subtle muted container */
+  --surface-card: #FFFCF7;      /* Clean warm card surface */
+  --surface-elevated: #FFFFFF;  /* Elevated modal / popover */
+  
+  /* Borders and Dividers */
+  --border-light: #EFE4D2;
+  --border-sand: #E2D3BC;       /* Standard sand border */
+  --border-dark: #CBB99F;       /* Focused / active border */
+  
+  /* Text and Inks */
+  --text-primary: #2E2118;      /* Deep umber */
+  --text-secondary: #6B5B4E;    /* Muted pencil umber */
+  --text-muted: #9C8C7E;        /* Subtle annotation tone */
+  --text-inverse: #FBF6EE;      /* White/Cream for dark badge */
+  
+  /* Terracotta Primary Accent */
+  --accent-terracotta: #C4603A;
+  --accent-terracotta-hover: #AA4E2B;
+  --accent-terracotta-soft: #F9ECE6;
+  --accent-terracotta-border: #E8B9A7;
+
+  /* Activity State Tones */
+  --state-walking: #5B8266;       /* Sage green */
+  --state-walking-soft: #EEF5F0;
+  --state-walking-border: #BCD1C3;
+  
+  --state-sitting: #C98A2C;       /* Ochre gold */
+  --state-sitting-soft: #FBF5E8;
+  --state-sitting-border: #ECD5A5;
+
+  --state-running: #C4603A;       /* Terracotta red */
+  --state-running-soft: #F9ECE6;
+  --state-running-border: #E8B9A7;
+  
+  /* Accent Supporting */
+  --accent-teal: #366D67;        /* Dusty research teal */
+  --accent-teal-soft: #E9F3F2;
+  --accent-teal-border: #A7CDCB;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(46, 33, 24, 0.05), 0 1px 2px rgba(46, 33, 24, 0.04);
+  --shadow-card: 0 3px 12px rgba(46, 33, 24, 0.06), 0 1px 3px rgba(46, 33, 24, 0.04);
+  --shadow-hover: 0 8px 24px rgba(46, 33, 24, 0.09), 0 3px 8px rgba(46, 33, 24, 0.06);
+  --shadow-modal: 0 20px 40px rgba(46, 33, 24, 0.15);
+  
+  /* Radii */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-full: 9999px;
+  
+  /* Typography */
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-sans: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Consolas, Monaco, monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.015em;
+}
+
+code, pre, .font-mono {
+  font-family: var(--font-mono);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom Scrollbar for Warm Notebook Style */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-sand);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-dark);
+}
